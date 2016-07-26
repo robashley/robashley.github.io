@@ -3,13 +3,13 @@
 /*CSS document*/
 
 /* --------------------------------------------------------
-Style Sheet for Website's Name
+Style Sheet for Robert Ashley's Portfolio Website
 
-version: 2.2
-last modified: 13.11.2008 by Someone Else
-author: Author's Name
-email: author@domain.com
-website: http://yourwebsite.com
+version: 1.0
+last modified: 26.07.2016 by Robert Ashley
+author: Robert Ashley
+email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
+website: http://robashley.co.uk
 ----------------------------------------------------------*/
 
 
@@ -21,3 +21,24 @@ div[class^="col-"] {
 }
 /* ---- */
 
+body {
+	background-color: #eee;
+}
+
+.intro-content-wrap {
+	background-color: #eee;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+.carousel-content-wrap {
+	background-color: #fff;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+.outro-content-wrap {
+	background-color: #eee;
+	padding-top:60px;
+	padding-bottom:60px;
+}
