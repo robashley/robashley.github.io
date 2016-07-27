@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.0
-last modified: 26.07.2016 by Robert Ashley
+last modified: 27.07.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -48,7 +48,7 @@ body {
 .carousel-inner {
 	position: relative;
 	padding: 0;
-	width: 70%;
+	max-width: 790px;
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden
@@ -56,6 +56,8 @@ body {
 
 .carousel-caption {
     position: relative;
+    width: 100%;
+    text-align: left;
     left: auto;
     right: auto;
     color: #000;
