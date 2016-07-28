@@ -48,9 +48,19 @@ body {
 /* hide carousel-control when on a screen below 750px */
 @media (max-width: 750px) {
   
-    a.left.carousel-control, a.right.carousel-control{
+    a.left.carousel-control {
         display:none !important;
     }
+
+    .carousel-control.right {
+    	width: 100%;
+    }
+
+    .carousel-control .glyphicon-chevron-right {
+    	visibility: hidden;
+    }
+
+
 }
 
 .carousel-inner {
