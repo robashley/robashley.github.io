@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.0
-last modified: 28.07.2016 by Robert Ashley
+last modified: 01.08.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -135,4 +135,18 @@ body {
   z-index: 2;
 }
 
+/* --- overlay --- */
+#overlay {
+    z-index: 10;
+    position: absolute; 
+    display: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
 
+}
+
+#overlay p {
+    text-align: center;
+    padding-top: 30%;
+}
