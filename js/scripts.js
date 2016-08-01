@@ -10,5 +10,10 @@ $(document).ready(function(){
 		$('#overlay').fadeIn('fast').delay(1000).fadeOut('fast')
 		$("#overlay").css("height", $(".item img").height());
 		} 
+
+    $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},600);
+    return false;
+  });
 });
 

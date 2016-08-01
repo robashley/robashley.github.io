@@ -150,3 +150,9 @@ body {
     text-align: center;
     padding-top: 30%;
 }
+
+/* --- scroll to top --- */
+
+.scrollToTop{
+  text-align:center;
+  color:#ff0000;
