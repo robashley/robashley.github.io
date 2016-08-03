@@ -151,12 +151,16 @@ body {
     padding-top: 30%;
 }
 
+#overlay p svg {
+    fill:rgb(255,255,255);
+}
+
 /* --- ARROW CONTROL POSITIONING --- */
 
 /* ---  Scroll to top arrow --- */
 @media (min-width: 992px) {
 
- .scrollToTop img {
+ .scrollToTop svg {
     float:right;
   } 
 
@@ -199,9 +203,17 @@ body {
     position: absolute;
     bottom:0;
     right:0;
+
   } 
 
- .scroll-down-arrow img{
+ .scroll-down-arrow svg{
     float:right;
   } 
+
 }
+
+/* --- On hover --- */
+
+a.scrollToTop:hover svg polygon{
+    fill: rgb(249,221,90);
+  } 
