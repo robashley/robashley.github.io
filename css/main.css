@@ -5,7 +5,7 @@
 /* --------------------------------------------------------
 Style Sheet for Robert Ashley's Portfolio Website
 
-version: 1.0
+version: 1.1
 last modified: 03.08.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
@@ -13,13 +13,24 @@ website: http://robashley.co.uk
 ----------------------------------------------------------*/
 
 
-/* Show grid code
+/* --- Show grid code ---
 
 div[class^="col-"] {
     background-color: rgba(255, 0, 0, 0.2);
     border: 1px dotted rgba(0, 0, 0, 0.5);
 }
- */
+
+--- */
+@import url(http://db.onlinewebfonts.com/c/bc9fa02b4227255be2387a7e19a3e09b?family=Akkurat-Light);
+
+@font-face {font-family: "Akkurat-Light";
+    src: url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.eot");
+    src: url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.svg#Akkurat-Light") format("svg");
+}
 
 body {
 	background-color: #eee;
@@ -43,9 +54,9 @@ body {
 	padding-bottom:60px;
 }
 
-/* --- carousel styling --- */
+/* --- CAROUSEL STYLING --- */
 
-/* hide carousel-control when on a screen below 750px */
+/* --- ARROW POSITIONING: Hide carousel-control when on a screen below 750px */
 @media (max-width: 750px) {
   
     a.left.carousel-control {
@@ -107,7 +118,7 @@ body {
 	top: 39.5%;
 } 
  --- */
-/* --- carousel fading --- */
+/* --- CAROUSEL FADING EFFECT --- */
 
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -156,9 +167,9 @@ body {
     fill:rgb(255,255,255);
 }
 
-/* --- ARROW CONTROL POSITIONING --- */
+/* --- ARROW POSITIONING --- */
 
-/* ---  Scroll to top arrow --- */
+/* ---  ARROW POSITIONING: Scroll to top arrow --- */
 @media (min-width: 992px) {
 
  .scrollToTop svg {
@@ -167,7 +178,7 @@ body {
 
 }
 
-/* --- Carousel arrows --- */
+/* --- ARROW POSITIONING: Carousel arrows --- */
 .carousel-control {
   width: 50%;
 }
@@ -192,7 +203,7 @@ body {
 
 }
 
-/* --- Scroll down arrow --- */
+/* --- ARROW POSITIONING: Scroll down arrow --- */
 
 .row {
     position: relative;
@@ -213,8 +224,54 @@ body {
 
 }
 
-/* --- On hover --- */
+/* --- ARROW POSITIONING: On hover --- */
 
 a.scrollToTop:hover svg polygon{
     fill: rgb(249,221,90);
   } 
+
+/* -- FONTS -- */
+
+/* -- FONTS: Intro Section -- */
+.intro-content-wrap {
+
+  font-family: 'Fira Sans','helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  line-height: 36px;
+  color: rgb(17,17,17);
+}
+
+/* -- FONTS: Carousel Section -- */
+.carousel-content-wrap {
+  font-family: 'Fira Sans','helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  color: rgb(17,17,17);
+}
+
+/* -- FONTS: Outro Section -- */
+.outro-content-wrap {
+  font-family: 'Fira Sans','helvetica', sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  line-height: 36px;
+  color: rgb(240,240,240);
+}
+
+/* -- FONTS: Font awesome -- */
+i.fa {
+    color: rgb(255,255,255);
+
+}
+
+/* -- FONTS: Body text style -- */
+
+.body-text {
+  font-size: 18px;
+  line-height: 36px;
+
+}
+
+
