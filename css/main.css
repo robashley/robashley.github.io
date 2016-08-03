@@ -148,7 +148,8 @@ body {
 
 #overlay p {
     text-align: center;
-    padding-top: 30%;
+    line-height: 30px;
+    padding-top: 25%;
 }
 
 #overlay p svg {
