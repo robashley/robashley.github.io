@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.1
-last modified: 03.08.2016 by Robert Ashley
+last modified: 04.08.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -21,16 +21,6 @@ div[class^="col-"] {
 }
 
 --- */
-@import url(http://db.onlinewebfonts.com/c/bc9fa02b4227255be2387a7e19a3e09b?family=Akkurat-Light);
-
-@font-face {font-family: "Akkurat-Light";
-    src: url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.eot");
-    src: url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.eot?#iefix") format("embedded-opentype"),
-    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.woff") format("woff"),
-    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.ttf") format("truetype"),
-    url("http://db.onlinewebfonts.com/t/bc9fa02b4227255be2387a7e19a3e09b.svg#Akkurat-Light") format("svg");
-}
 
 body {
 	background-color: #eee;
@@ -56,7 +46,7 @@ body {
 
 /* --- CAROUSEL STYLING --- */
 
-/* --- ARROW POSITIONING: Hide carousel-control when on a screen below 750px */
+/* --- CAROUSEL STYLING: Hide carousel-control when on a screen below 750px */
 @media (max-width: 750px) {
   
     a.left.carousel-control {
@@ -70,7 +60,6 @@ body {
     .carousel-control .arrow-right {
     	visibility: hidden;
     }
-
 
 }
 
@@ -89,11 +78,11 @@ body {
     text-align: left;
     left: auto;
     right: auto;
-    color: #000;
+    color: rgb(17,17,17);
     text-shadow:none;
 }
 
-/* --- prev/next button effects removed --- */
+/* --- CAROUSEL STYLING: Control button effects removed --- */
 
 .carousel-control.left, .carousel-control.right {
   background: none !important;
@@ -109,7 +98,7 @@ body {
   visibility: visible;
 }
 
-/* --- original prev/next button positioning
+/* --- CAROUSEL STYLING: Original control button positioning
 .carousel-control .glyphicon-chevron-left {
 	top: 39.5%;
 }
@@ -118,7 +107,8 @@ body {
 	top: 39.5%;
 } 
  --- */
-/* --- CAROUSEL FADING EFFECT --- */
+
+/* --- CAROUSEL STYLING: Carousel Fading Effect instead of scroll --- */
 
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -146,7 +136,7 @@ body {
   z-index: 2;
 }
 
-/* --- OVERLAY --- */
+/* --- CAROUSEL STYLING: Mobile overlay --- */
 #overlay {
     z-index: 10;
     position: absolute; 
@@ -230,47 +220,110 @@ a.scrollToTop:hover svg polygon{
     fill: rgb(249,221,90);
   } 
 
-/* -- FONTS -- */
+/* -- FONTS -- */ 
 
-/* -- FONTS: Intro Section -- */
+h1 {
+  font-family: "Farnham Disp Reg",'georgia', serif;
+  font-style: normal;
+  font-weight: normal; 
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: "Farnham Disp Reg",'georgia', serif;
+  font-style: normal;
+  font-weight: normal; 
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: "Benton Sans Lt",'helvetica', 'arial', sans-serif;
+  font-style: normal;
+  font-weight: normal; 
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+h4 {
+  font-family: "Benton Sans Lt",'helvetica', 'arial', sans-serif;
+  font-style: normal;
+  font-weight: normal; 
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 0px;
+}
+
+p {
+  font-family: "Benton Sans Lt",'helvetica', 'arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 768px) {
+
+       h1
+       {
+          font-size:20px;
+          line-height: 36px;
+
+       }
+
+       h2
+       {
+          font-size:20px;
+          line-height: 36px;
+
+       }
+
+       h3
+       {
+          font-size:16px;
+       }
+
+       h4
+       {
+          font-size:20px;
+          line-height: 36px;
+
+       }
+
+       p {
+
+          font-size: 16px;
+          line-height: 36px;
+
+       }
+}
+
+/* -- FONTS: Color Intro Section -- */
 .intro-content-wrap {
 
-  font-family: 'Fira Sans','helvetica', sans-serif;
-  font-weight: 300;
-  font-size: 1.8em;
-  line-height: 36px;
   color: rgb(17,17,17);
 }
 
-/* -- FONTS: Carousel Section -- */
+/* -- FONTS: Color Carousel Section -- */
 .carousel-content-wrap {
-  font-family: 'Fira Sans','helvetica', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  letter-spacing: 0.1px;
+
   color: rgb(17,17,17);
 }
 
-/* -- FONTS: Outro Section -- */
+/* -- FONTS: Color Outro Section -- */
 .outro-content-wrap {
-  font-family: 'Fira Sans','helvetica', sans-serif;
-  font-weight: 300;
-  font-size: 1.8em;
-  line-height: 36px;
+
   color: rgb(240,240,240);
 }
 
 /* -- FONTS: Font awesome -- */
 i.fa {
     color: rgb(255,255,255);
-
-}
-
-/* -- FONTS: Body text style -- */
-
-.body-text {
-  font-size: 18px;
-  line-height: 36px;
+    margin-right: 10px;
 
 }
 
