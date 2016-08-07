@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.0
-last modified: 01.08.2016 by Robert Ashley
+last modified: 03.08.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -26,7 +26,7 @@ body {
 }
 
 .intro-content-wrap {
-	background-color: #eee;
+	background-color: rgb(249,248,247);
 	padding-top:60px;
 	padding-bottom:60px;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .outro-content-wrap {
-	background-color: #eee;
+	background-color:rgb(33,33,33);
 	padding-top:60px;
 	padding-bottom:60px;
 }
@@ -56,7 +56,7 @@ body {
     	width: 100%;
     }
 
-    .carousel-control .glyphicon-chevron-right {
+    .carousel-control .arrow-right {
     	visibility: hidden;
     }
 
@@ -98,7 +98,7 @@ body {
   visibility: visible;
 }
 
-/* --- prev/next button positioning --- */
+/* --- original prev/next button positioning
 .carousel-control .glyphicon-chevron-left {
 	top: 39.5%;
 }
@@ -106,7 +106,7 @@ body {
 .carousel-control .glyphicon-chevron-right {
 	top: 39.5%;
 } 
-
+ --- */
 /* --- carousel fading --- */
 
 .carousel-fade .carousel-inner .item {
@@ -135,7 +135,7 @@ body {
   z-index: 2;
 }
 
-/* --- overlay --- */
+/* --- OVERLAY --- */
 #overlay {
     z-index: 10;
     position: absolute; 
@@ -148,11 +148,89 @@ body {
 
 #overlay p {
     text-align: center;
-    padding-top: 30%;
+    line-height: 30px;
+    padding-top: 25%;
 }
 
-/* --- scroll to top --- */
+#overlay p svg {
+    fill:rgb(255,255,255);
+}
 
-.scrollToTop{
-  text-align:center;
-  color:#ff0000;
+/* --- ARROW CONTROL POSITIONING --- */
+
+/* ---  Scroll to top arrow --- */
+@media (min-width: 992px) {
+
+ .scrollToTop svg {
+    float:right;
+  } 
+
+}
+
+/* --- Carousel arrows --- */
+.carousel-control {
+  width: 50%;
+}
+
+.carousel-control .arrow-left,  
+.carousel-control .arrow-right {
+  position: absolute;
+  top: 39.5%;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.arrow-left {
+  content: url(../images/arrow-left.svg);
+    left: 25%;
+
+}
+
+.arrow-right {
+  content: url(../images/arrow-right.svg);
+  right: 25%;
+
+}
+
+/* --- Scroll down arrow --- */
+
+.row {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+
+  .scroll-down-arrow {
+    position: absolute;
+    bottom:0;
+    right:0;
+
+  } 
+
+ .scroll-down-arrow svg{
+    float:right;
+  } 
+
+}
+
+
+@media (max-width: 992px) {
+
+  .scroll-down-arrow {
+    width: 24px;
+    height: 48px;
+
+  } 
+
+ .scroll-down-arrow svg{
+    width: 24px;
+    height: 48px;
+  } 
+
+}
+
+/* --- On hover --- */
+
+a.scrollToTop:hover svg polygon{
+    fill: rgb(249,221,90);
+  } 

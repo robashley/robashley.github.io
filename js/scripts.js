@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   }
 	
-  if ( $(window).width() <=800) {      
+  if ( $(window).width() <=750) {      
 		$('#overlay').fadeIn('fast').delay(1000).fadeOut('fast')
 		$("#overlay").css("height", $(".item img").height());
 		} 
