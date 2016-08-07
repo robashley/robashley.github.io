@@ -214,6 +214,22 @@ body {
 
 }
 
+
+@media (max-width: 768px) {
+
+  .scroll-down-arrow svg {
+    width: 24px;
+    height: 48px;
+
+  } 
+
+ .scrollToTop svg {
+    width: 24px;
+    height: 48px;
+  } 
+
+}
+
 /* --- ARROW POSITIONING: On hover --- */
 
 a.scrollToTop:hover svg polygon{
