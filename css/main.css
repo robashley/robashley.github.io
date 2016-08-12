@@ -28,7 +28,7 @@ body {
 
 .intro-content-wrap {
 	background-color: rgb(249,248,247);
-	padding-top:60px;
+	padding-top:50px;
 	padding-bottom:60px;
 }
 
@@ -61,7 +61,6 @@ body {
     .carousel-control .arrow-right {
     	visibility: hidden;
     } 
-
 
 } 
 
@@ -217,7 +216,6 @@ body {
 
 }
 
-
 @media (max-width: 768px) {
 
   .scroll-down-arrow svg {
@@ -247,6 +245,7 @@ h1 {
   font-weight: normal; 
   font-size: 28px;
   line-height: 40px;
+  margin-top:0;
   margin-bottom: 30px;
 }
 
@@ -323,19 +322,16 @@ p {
 
 /* -- FONTS: Color Intro Section -- */
 .intro-content-wrap {
-
   color: rgb(17,17,17);
 }
 
 /* -- FONTS: Color Carousel Section -- */
 .carousel-content-wrap {
-
   color: rgb(17,17,17);
 }
 
 /* -- FONTS: Color Outro Section -- */
 .outro-content-wrap {
-
   color: rgb(240,240,240);
 }
 
