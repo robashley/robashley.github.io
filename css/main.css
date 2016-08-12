@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.1
-last modified: 04.08.2016 by Robert Ashley
+last modified: 12.08.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -47,7 +47,8 @@ body {
 /* --- CAROUSEL STYLING --- */
 
 /* --- CAROUSEL STYLING: Hide carousel-control when on a screen below 750px */
-@media (max-width: 750px) {
+
+ @media (max-width: 768px) {
   
     a.left.carousel-control {
         display:none !important;
@@ -59,9 +60,10 @@ body {
 
     .carousel-control .arrow-right {
     	visibility: hidden;
-    }
+    } 
 
-}
+
+} 
 
 .carousel-inner {
 	position: relative;
@@ -135,6 +137,7 @@ body {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+
 
 /* --- CAROUSEL STYLING: Mobile overlay --- */
 #overlay {
@@ -233,7 +236,7 @@ body {
 /* --- ARROW POSITIONING: On hover --- */
 
 a.scrollToTop:hover svg polygon{
-    fill: rgb(249,221,90);
+    fill: rgb(150,150,150);
   } 
 
 /* -- FONTS -- */ 
@@ -339,8 +342,52 @@ p {
 /* -- FONTS: Font awesome -- */
 i.fa {
     color: rgb(255,255,255);
+    font-size: 1.2em;
     margin-right: 10px;
 
 }
+
+/* -- FONTS: a link states -- */
+
+a {
+    color: rgb(240,240,240);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(150,150,150);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(230,210,80);
+    text-decoration: underline;
+}
+
+/* -- FONTS: social link states -- */
+
+.social_icons a {
+  color: rgb(240,240,240);
+  text-decoration: none;
+}
+
+.social_icons:hover a i.fa.fa-twitter { 
+    color: rgb(29,161,242);
+}
+
+.social_icons:hover a i.fa.fa-instagram { 
+    color: rgb(188,42,141);
+}
+
+.social_icons:active a i.fa.fa-twitter { 
+    color: rgb(29,161,242);
+}
+
+.social_icons:active a i.fa.fa-instagram { 
+    color: rgb(188,42,141);
+}
+
+
+
 
 
