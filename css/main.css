@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.1
-last modified: 12.08.2016 by Robert Ashley
+last modified: 13.08.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -99,6 +99,14 @@ body {
   visibility: visible;
 }
 
+.item .carousel-caption p {
+  line-height: 1.1;
+}
+
+.item .carousel-caption h3 {
+  margin-top: 40px;
+}
+
 /* --- CAROUSEL STYLING: Original control button positioning
 .carousel-control .glyphicon-chevron-left {
 	top: 39.5%;
@@ -144,14 +152,14 @@ body {
     position: absolute; 
     display: none;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.35);
     color: #fff;
 
 }
 
 #overlay p {
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     padding-top: 25%;
 }
 
@@ -223,12 +231,15 @@ body {
   .scroll-down-arrow svg {
     width: 24px;
     height: 48px;
+    margin-top: 10px;
 
   } 
 
  .scrollToTop svg {
     width: 24px;
     height: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   } 
 
 }
