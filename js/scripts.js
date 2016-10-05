@@ -7,7 +7,7 @@ $(document).ready(function(){
   }
 	
   if ( $(window).width() <=750) {      
-		$('#overlay').fadeIn('fast').delay(1000).fadeOut('fast')
+		$('#overlay').fadeIn('fast').delay(3000).fadeOut('fast')
 		$("#overlay").css("height", $(".item img").height());
 		} 
 
