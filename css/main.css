@@ -6,7 +6,7 @@
 Style Sheet for Robert Ashley's Portfolio Website
 
 version: 1.1
-last modified: 13.08.2016 by Robert Ashley
+last modified: 05.10.2016 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
@@ -24,6 +24,15 @@ div[class^="col-"] {
 
 body {
 	background-color: #eee;
+}
+
+::selection {
+  background:0 0;
+  color:rgb(29,161,242) /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background:0 0;
+  color:rgb(29,161,242) /* Gecko Browsers */
 }
 
 .intro-content-wrap {
@@ -253,7 +262,7 @@ a.scrollToTop:hover svg polygon{
 /* -- FONTS -- */ 
 
 h1 {
-  font-family: "Farnham Disp Reg",'georgia', serif;
+  font-family: "Farnham Disp Reg",  georgia, serif;
   font-style: normal;
   font-weight: normal; 
   font-size: 28px;
@@ -263,7 +272,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Farnham Disp Reg",'georgia', serif;
+  font-family: "Farnham Disp Reg", georgia, serif;
   font-style: normal;
   font-weight: normal; 
   font-size: 28px;
@@ -272,7 +281,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Benton Sans Lt",'helvetica', 'arial', sans-serif;
+  font-family: "Benton Sans Lt",'helvetica neue', 'arial', sans-serif;
   font-style: normal;
   font-weight: normal; 
   font-size: 20px;
@@ -280,7 +289,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Benton Sans Lt",'helvetica', 'arial', sans-serif;
+  font-family: "Benton Sans Lt",'helvetica neue', 'arial', sans-serif;
   font-style: normal;
   font-weight: normal; 
   font-size: 28px;
@@ -289,7 +298,7 @@ h4 {
 }
 
 p {
-  font-family: "Benton Sans Lt",'helvetica', 'arial', sans-serif;
+  font-family: "Benton Sans Lt",'helvetica neue', 'arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -357,7 +366,10 @@ i.fa {
 }
 
 /* -- FONTS: a link states -- */
-
+h4 a{
+    color: rgb(17,17,17);
+    text-decoration: underline;
+}
 a {
     color: rgb(240,240,240);
     text-decoration: underline;
@@ -395,6 +407,7 @@ a:active {
 .social_icons:active a i.fa.fa-instagram { 
     color: rgb(188,42,141);
 }
+
 
 
 
