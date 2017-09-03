@@ -281,26 +281,26 @@ h2 {
 }
 
 h3 {
-  font-family: "Benton Sans Lt",'helvetica neue', 'arial', sans-serif;
+  font-family: "Raleway",'helvetica neue', 'arial', sans-serif;
   font-style: normal;
-  font-weight: normal; 
+  font-weight: 500; 
   font-size: 20px;
   letter-spacing: 0.1px;
 }
 
 h4 {
-  font-family: "Benton Sans Lt",'helvetica neue', 'arial', sans-serif;
+  font-family: "Raleway",'helvetica neue', 'arial', sans-serif;
   font-style: normal;
-  font-weight: normal; 
+  font-weight: 500; 
   font-size: 28px;
   line-height: 40px;
   margin-top: 0px;
 }
 
 p {
-  font-family: "Benton Sans Lt",'helvetica neue', 'arial', sans-serif;
+  font-family: "Raleway",'helvetica neue', 'arial', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 40px;
   letter-spacing: 0.1px;
