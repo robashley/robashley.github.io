@@ -5,13 +5,12 @@
 /* --------------------------------------------------------
 Style Sheet for Robert Ashley's Portfolio Website
 
-version: 1.1
-last modified: 05.10.2016 by Robert Ashley
+version: 2.1
+last modified: 28.04.2019 by Robert Ashley
 author: Robert Ashley
 email: robashley.hello[@]gmail.com or hi[@]robashley.co.uk
 website: http://robashley.co.uk
 ----------------------------------------------------------*/
-
 
 /* --- Show grid code ---
 
@@ -19,11 +18,10 @@ div[class^="col-"] {
     background-color: rgba(255, 0, 0, 0.2);
     border: 1px dotted rgba(0, 0, 0, 0.5);
 }
-
 --- */
 
 body {
-	background-color: #eee;
+	background-color: rgb(255,255,255);
 }
 
 ::selection {
@@ -35,309 +33,248 @@ body {
   color:rgb(29,161,242) /* Gecko Browsers */
 }
 
-.intro-content-wrap {
-	background-color: rgb(249,248,247);
-	padding-top:50px;
-	padding-bottom:60px;
-}
-
-.carousel-content-wrap {
-	background-color: #fff;
-	padding-top:60px;
-	padding-bottom:60px;
-}
-
-.outro-content-wrap {
-	background-color:rgb(33,33,33);
-	padding-top:60px;
-	padding-bottom:60px;
-}
-
-/* --- CAROUSEL STYLING --- */
-
-/* --- CAROUSEL STYLING: Hide carousel-control when on a screen below 750px */
-
- @media (max-width: 768px) {
-  
-    a.left.carousel-control {
-        display:none !important;
-    }
-
-    .carousel-control.right {
-    	width: 100%;
-    }
-
-    .carousel-control .arrow-right {
-    	visibility: hidden;
-    } 
-
-} 
-
-.carousel-inner {
-	position: relative;
-	padding: 0;
-	max-width: 790px;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden
-}
-
-.carousel-caption {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    left: auto;
-    right: auto;
-    color: rgb(17,17,17);
-    text-shadow:none;
-}
-
-/* --- CAROUSEL STYLING: Control button effects removed --- */
-
-.carousel-control.left, .carousel-control.right {
-  background: none !important;
-  filter: progid: none !important;
-  outline: 0;
-  color: #000;
-  text-shadow:none;
-  opacity:1;
- }
-
-
-.carousel:hover .carousel-control {
-  visibility: visible;
-}
-
-.item .carousel-caption p {
-  line-height: 1.1;
-}
-
-.item .carousel-caption h3 {
-  margin-top: 40px;
-}
-
-/* --- CAROUSEL STYLING: Original control button positioning
-.carousel-control .glyphicon-chevron-left {
-	top: 39.5%;
-}
-
-.carousel-control .glyphicon-chevron-right {
-	top: 39.5%;
-} 
- --- */
-
-/* --- CAROUSEL STYLING: Carousel Fading Effect instead of scroll --- */
-
-.carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
-}
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
+.navigation-bar {
+  background: transparent;
+  padding-top:30px;
+  position: fixed;
+  padding-bottom: 30px;
+  top: 0;
   left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
+  z-index: 1;
+  height: 10%;
+  width: 100%;
 }
 
-
-/* --- CAROUSEL STYLING: Mobile overlay --- */
-#overlay {
-    z-index: 10;
-    position: absolute; 
-    display: none;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    color: #fff;
-
+.intro-content-wrap {
+	background-color: rgb(255,255,255);
+	padding-top:100px;
+	padding-bottom:60px;
 }
 
-#overlay p {
-    text-align: center;
-    line-height: 40px;
-    padding-top: 25%;
+/* --- MODAL STYLING --- */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 0;  /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#overlay p svg {
-    fill:rgb(255,255,255);
-}
-
-/* --- ARROW POSITIONING --- */
-
-/* ---  ARROW POSITIONING: Scroll to top arrow --- */
-@media (min-width: 992px) {
-
- .scrollToTop svg {
-    float:right;
-  } 
-
-}
-
-/* --- ARROW POSITIONING: Carousel arrows --- */
-.carousel-control {
-  width: 50%;
-}
-
-.carousel-control .arrow-left,  
-.carousel-control .arrow-right {
-  position: absolute;
-  top: 39.5%;
-  display: inline-block;
-  margin-top: -10px;
-}
-
-.arrow-left {
-  content: url(../images/arrow-left.svg);
-    left: 25%;
-
-}
-
-.arrow-right {
-  content: url(../images/arrow-right.svg);
-  right: 25%;
-
-}
-
-/* --- ARROW POSITIONING: Scroll down arrow --- */
-
-.row {
+/* Modal Content */
+.modal-content {
     position: relative;
+    background-color: rgb(33,33,33);
+    margin: auto;
+    padding: 0;
+    border: 0px;
+width: -moz-calc(100%);
+width: -webkit-calc(100%);
+width: -o-calc(100%);
+width: calc(100%);
+height: auto;
+/* max-width: 630px; */
+    /*width: 80%; */
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.7s;
+    animation-name: slideIn;
+    animation-duration: 0.7s
 }
 
-@media (min-width: 992px) {
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom:-500px; opacity:1}
+    to {bottom:0; opacity:1}
+}
 
-  .scroll-down-arrow {
-    position: absolute;
-    bottom:0;
-    right:0;
+@keyframes slideIn {
+    from {bottom:-500px; opacity:1}
+    to {bottom:0; opacity:1}
+}
 
-  } 
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 36px;
+}
 
- .scroll-down-arrow svg{
-    float:right;
-  } 
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 30px 16px 2px;
+    background-color: rgb(33,33,33);
+    color: #fff;
+    border: none;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    color: #fff;
+}
+
+.modal-footer {
+    padding: 32px 16px;
+    background-color: rgb(33,33,33);
+    color: #fff;
+    border: none;
+}
+
+/* --- END MODAL STYLING --- */
+
+.image-box {
 
 }
 
 
-
-@media (max-width: 768px) {
-
-  .scroll-down-arrow svg {
-    width: 24px;
-    height: 48px;
-    margin-top: 10px;
-
-  } 
-
- .scrollToTop svg {
-    width: 24px;
-    height: 48px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  } 
-
+.hideme
+{
+    opacity:0;
 }
 
-/* --- ARROW POSITIONING: On hover --- */
-
-a.scrollToTop:hover svg polygon{
-    fill: rgb(150,150,150);
-  } 
 
 /* -- FONTS -- */ 
 
 h1 {
-  font-family: "Farnham Disp Reg",  georgia, serif;
+  font-family: "Cormorant",  georgia, serif;
   font-style: normal;
   font-weight: normal; 
-  font-size: 28px;
+  font-size: 24px;
   line-height: 40px;
+  letter-spacing: 0.01em;
   margin-top:0;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-family: "Farnham Disp Reg", georgia, serif;
+  font-family: "Formular", georgia, serif;
   font-style: normal;
-  font-weight: normal; 
-  font-size: 28px;
+  font-weight: 300; 
+  font-size: 20px;
   line-height: 40px;
   margin-top: 0px;
 }
 
 h3 {
-  font-family: "Raleway",'helvetica neue', 'arial', sans-serif;
+  font-family: "Cormorant", georgia, serif;
+  display: inline;
   font-style: normal;
-  font-weight: 400; 
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
   letter-spacing: 0.1px;
 }
 
 h4 {
-  font-family: "Raleway",'helvetica neue', 'arial', sans-serif;
+  font-family: "Formular", georgia, serif;
+  display: inline;
   font-style: normal;
-  font-weight: 400; 
-  font-size: 28px;
-  line-height: 40px;
-  margin-top: 0px;
+  font-weight: 300; 
+  font-size: 18px;
+  letter-spacing: 0.1px;
 }
 
 p {
-  font-family: "Raleway",'helvetica neue', 'arial', sans-serif;
+  font-family: "Cormorant", georgia, serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
-  letter-spacing: 0.1px;
+  font-weight: 300; 
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 0px;
+}
+
+  button  {
+  border:none;
+  background-color:transparent;
+  margin-top: 0px;
+
+} 
+
+button:visited {
+  outline:0;
+  color: #333;
+} 
+
+button:active {
+  outline:0;
+  color: #333;
+} 
+
+button:focus {
+  outline:0;
+}
+
+
+button#myBtn {
+  /* float: right; */
 }
 
 @media (max-width: 768px) {
 
        h1
        {
-          font-size:20px;
-          line-height: 36px;
+          font-size:18px;
+          line-height: 30px;
 
        }
 
        h2
        {
-          font-size:20px;
-          line-height: 36px;
+          font-size:18px;
+          line-height: 30px;
 
        }
 
        h3
        {
-          font-size:16px;
+          font-size:18px;
+          line-height: 30px;
+
        }
 
        h4
        {
-          font-size:20px;
-          line-height: 36px;
+          font-size:13.5px;
+          line-height: 30px;
 
        }
 
        p {
 
-          font-size: 16px;
-          line-height: 36px;
+          font-size: 33px;
+          line-height: 39px;
+
+       }
+
+       .close {
+          font-size: 27px;
+       } 
+
+       .navigation-bar {
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+       }
+
+       .intro-content-wrap {
+
+        padding-left: 15px;
+        padding-right: 15px;
+
 
        }
 }
@@ -357,22 +294,14 @@ p {
   color: rgb(240,240,240);
 }
 
-/* -- FONTS: Font awesome -- */
-i.fa {
-    color: rgb(255,255,255);
-    font-size: 1.2em;
-    margin-right: 10px;
-
-}
 
 /* -- FONTS: a link states -- */
 h4 a{
-    color: rgb(17,17,17);
-    text-decoration: underline;
+    color: rgb(240,240,240);
+
 }
 a {
-    color: rgb(240,240,240);
-    text-decoration: underline;
+    color: rgb(150,150,150);
 }
 
 a:hover {
@@ -382,34 +311,6 @@ a:hover {
 
 a:active {
     color: rgb(230,210,80);
-    text-decoration: underline;
+    text-decoration: none;
 }
-
-/* -- FONTS: social link states -- */
-
-.social_icons a {
-  color: rgb(240,240,240);
-  text-decoration: none;
-}
-
-.social_icons:hover a i.fa.fa-twitter { 
-    color: rgb(29,161,242);
-}
-
-.social_icons:hover a i.fa.fa-instagram { 
-    color: rgb(188,42,141);
-}
-
-.social_icons:active a i.fa.fa-twitter { 
-    color: rgb(29,161,242);
-}
-
-.social_icons:active a i.fa.fa-instagram { 
-    color: rgb(188,42,141);
-}
-
-
-
-
-
 
