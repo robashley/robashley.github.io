@@ -135,6 +135,18 @@ height: auto;
 
 /* --- END MODAL STYLING --- */
 
+
+iframe { 
+  display:block;
+  margin: 0 auto;
+
+}
+
+.intro-content-wrap h4 {
+  display:block;
+  padding-top:20px;
+}
+
 .image-box {
 
 }
