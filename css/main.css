@@ -172,7 +172,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Formular", georgia, serif;
+  font-family: "Formular", helvetica, sans-serif;
   font-style: normal;
   font-weight: 300; 
   font-size: 20px;
@@ -191,7 +191,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Formular", georgia, serif;
+  font-family: "Formular", helvetica, sans-serif;
   display: inline;
   font-style: normal;
   font-weight: 300; 
