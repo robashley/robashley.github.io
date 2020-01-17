@@ -79,7 +79,7 @@ width: -moz-calc(100%);
 width: -webkit-calc(100%);
 width: -o-calc(100%);
 width: calc(100%);
-height: auto;
+height: 100%;
 /* max-width: 630px; */
     /*width: 80%; */
     /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
@@ -123,6 +123,7 @@ height: auto;
 
 .modal-body {
     padding: 2px 16px;
+    background-color: rgb(33,33,33);
     color: #fff;
 }
 
@@ -223,6 +224,12 @@ button:visited {
 button:active {
   outline:0;
   color: #333;
+} 
+
+button:hover {
+  outline:0;
+  color: rgb(150,150,150);
+
 } 
 
 button:focus {
