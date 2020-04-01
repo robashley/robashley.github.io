@@ -102,9 +102,13 @@ height: 100%;
 
 /* The Close Button */
 .close {
-    color: #ffffff;
+    font-family: "Roboto";
+    display: inline;
+    font-weight: 300; 
+    line-height: 40px;
+    color: #fff;
     float: right;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .close:hover,
@@ -120,6 +124,19 @@ height: 100%;
     color: #fff;
     border: none;
 }
+
+.modal-header h2::after {
+  display: inline-block; 
+  content:"";
+  background-color: #fff;
+  margin-top: -1em;
+  margin-left: 1em; 
+  margin-right: 0.5em; 
+  margin-bottom: 0.3em;
+  width: 2em;
+  height: 1px;
+
+  }
 
 .modal-body {
     padding: 2px 16px;
@@ -158,6 +175,18 @@ iframe {
     opacity:0;
 }
 
+hr {
+  display: block; 
+  border: 0;
+  background-color: #fff;
+  margin-top: 2em;
+  margin-left: 0; 
+  margin-right: 0; 
+  margin-bottom: 2em;
+  width: 2em;
+  height: 1px;
+
+}
 
 /* -- FONTS -- */ 
 
@@ -173,31 +202,47 @@ h1 {
 }
 
 h2 {
-  font-family: "Formular", helvetica, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  display: inline;
   font-style: normal;
   font-weight: 300; 
-  font-size: 20px;
+  font-size: 15px;
   line-height: 40px;
   margin-top: 0px;
+  letter-spacing: 0.2px;
 }
+
+h2::after {
+  display: inline-block; 
+  content:"";
+  background-color: #000;
+  margin-top: -1em;
+  margin-left: 1em; 
+  margin-right: 0.5em; 
+  margin-bottom: 0.3em;
+  width: 2em;
+  height: 1px;
+
+  }
 
 h3 {
   font-family: "Cormorant", georgia, serif;
   display: inline;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 40px;
   letter-spacing: 0.1px;
 }
 
 h4 {
-  font-family: "Formular", helvetica, sans-serif;
+  font-family: "Roboto", helvetica, arial, sans-serif;
   display: inline;
   font-style: normal;
   font-weight: 300; 
-  font-size: 18px;
-  letter-spacing: 0.1px;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.2px;
 }
 
 p {
@@ -252,7 +297,6 @@ button#myBtn {
 
        h2
        {
-          font-size:18px;
           line-height: 30px;
 
        }
@@ -268,6 +312,7 @@ button#myBtn {
        {
           font-size:13.5px;
           line-height: 30px;
+          text-align: left;
 
        }
 
